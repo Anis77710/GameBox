@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameBox - Game Management System</title>
+    <meta name="description" content="GameBox Game Management System" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="Style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">G</div>
+        <nav class="sidebar-nav">
+            <a href="#" class="sidebar-icon active" title="Home">
+            </a>
+            <a href="#" class="sidebar-icon" title="Library">
+            </a>
+            <a href="#" class="sidebar-icon" title="Favorites">
+            </a>
+            <a href="#" class="sidebar-icon" title="Bookmarks">
+            </a>
+            <a href="#" class="sidebar-icon" title="Settings">
+            </a>
+        </nav>
+        <div class="sidebar-avatar">U</div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+
+        <!-- Navbar -->
+        <header class="navbar">
+            <nav class="navbar-links">
+                <a href="#" class="nav-link active">Games</a>
+                <a href="#" class="nav-link">Series</a>
+                <a href="#" class="nav-link">Esports</a>
+            </nav>
+            <h1 class="navbar-brand">GAMEBOX</h1>
+            <div class="navbar-right">
+                <button class="icon-btn" title="Search">
+                </button>
+                <button class="icon-btn" title="Notifications">
+                </button>
+                <div class="user-info">
+                    <span class="user-name">Mark Paul</span>
+                    <div class="user-avatar-small"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+
+            <!-- Hero Section -->
+            <section class="hero">
+                <img src="/images/hero-game.jpg" alt="Featured Game" class="hero-bg" />
+                <div class="hero-overlay-right"></div>
+                <div class="hero-overlay-bottom"></div>
+                <button class="hero-play-btn" title="Play trailer">
+                </button>
+                <div class="hero-content">
+                    <span class="hero-label">Game of the Month</span>
+                    <h2 class="hero-title">Dark Souls: Rebirth</h2>
+                    <div class="hero-rating">
+                        <span class="rating-label">RATING</span>
+                        <div class="stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <span class="rating-value">4.6</span>
+                    </div>
+                    <div class="hero-meta"><span>Action RPG</span><span class="dot">•</span><span>2025</span></div>
+                    <p class="hero-desc">Venture into the abyss where ancient powers await. Battle through a dark,
+                        interconnected world filled with relentless enemies and epic boss encounters.</p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn-primary">Play Now</a>
+                        <button class="btn-icon-circle">+</button>
+                    </div>
+                    <div class="hero-dots">
+                        <span class="dot-indicator active"></span>
+                        <span class="dot-indicator"></span>
+                        <span class="dot-indicator"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recommendations -->
+            <section class="recommendations">
+                <h2 class="section-title">Recommendations</h2>
+                <div class="filters-row">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Action</button>
+                        <button class="filter-btn">RPG</button>
+                        <button class="filter-btn">Adventure</button>
+                        <button class="filter-btn">Racing</button>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search" />
+                    </div>
+                </div>
+
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="card-image"><img src="/images/game-1.jpg" alt="Elden Ring" loading="lazy" /><span
+                                class="card-badge">Expansion</span><button class="card-add">+</button></div>
+                        <div class="card-info">
+                            <div class="card-meta"><span class="card-rating">★ 4.8</span><span
+                                    class="card-year">2024</span></div>
+                            <h3 class="card-title">Elden Ring: Shadow of the Erdtree</h3>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="card-image"><img src="/images/game-2.jpg" alt="Cyberpunk" loading="lazy" /><span
+                                class="card-badge">Action</span><button class="card-add">+</button></div>
+                        <div class="card-info">
+                            <div class="card-meta"><span class="card-rating">★ 4.5</span><span
+                                    class="card-year">2024</span></div>
+                            <h3 class="card-title">Cyberpunk 2077: Phantom Liberty</h3>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="card-image"><img src="/images/game-3.jpg" alt="God of War" loading="lazy" /><button
+                                class="card-add">+</button></div>
+                        <div class="card-info">
+                            <div class="card-meta"><span class="card-rating">★ 4.7</span><span
+                                    class="card-year">2024</span></div>
+                            <h3 class="card-title">God of War: Ragnarök</h3>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="card-image"><img src="/images/game-4.jpg" alt="Hogwarts Legacy"
+                                loading="lazy" /><span class="card-badge">RPG</span><button class="card-add">+</button>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-meta"><span class="card-rating">★ 4.3</span><span
+                                    class="card-year">2023</span></div>
+                            <h3 class="card-title">Hogwarts Legacy</h3>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="card-image"><img src="/images/game-5.jpg" alt="Baldur's Gate 3"
+                                loading="lazy" /><span class="card-badge">RPG</span><button class="card-add">+</button>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-meta"><span class="card-rating">★ 4.9</span><span
+                                    class="card-year">2024</span></div>
+                            <h3 class="card-title">Baldur's Gate 3</h3>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="card-image"><img src="/images/game-6.jpg" alt="Spider-Man 2"
+                                loading="lazy" /><button class="card-add">+</button></div>
+                        <div class="card-info">
+                            <div class="card-meta"><span class="card-rating">★ 4.4</span><span
+                                    class="card-year">2024</span></div>
+                            <h3 class="card-title">Spider-Man 2</h3>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="card-image"><img src="/images/game-7.jpg" alt="Starfield" loading="lazy" /><button
+                                class="card-add">+</button></div>
+                        <div class="card-info">
+                            <div class="card-meta"><span class="card-rating">★ 4.0</span><span
+                                    class="card-year">2024</span></div>
+                            <h3 class="card-title">Starfield</h3>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="card-image"><img src="/images/game-8.jpg" alt="Red Dead Redemption 2"
+                                loading="lazy" /><span class="card-badge">Open World</span><button
+                                class="card-add">+</button></div>
+                        <div class="card-info">
+                            <div class="card-meta"><span class="card-rating">★ 4.8</span><span
+                                    class="card-year">2023</span></div>
+                            <h3 class="card-title">Red Dead Redemption 2</h3>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="card-image"><img src="/images/game-9.jpg" alt="The Last of Us Part II"
+                                loading="lazy" /><button class="card-add">+</button></div>
+                        <div class="card-info">
+                            <div class="card-meta"><span class="card-rating">★ 4.6</span><span
+                                    class="card-year">2023</span></div>
+                            <h3 class="card-title">The Last of Us Part II</h3>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="card-image"><img src="/images/game-10.jpg" alt="Need for Speed"
+                                loading="lazy" /><span class="card-badge">Racing</span><button
+                                class="card-add">+</button></div>
+                        <div class="card-info">
+                            <div class="card-meta"><span class="card-rating">★ 4.2</span><span
+                                    class="card-year">2024</span></div>
+                            <h3 class="card-title">Need for Speed: Unbound</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn">&lsaquo;</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-btn">25</button>
+                    <button class="page-btn">&rsaquo;</button>
+                </div>
+            </section>
+
+            <!-- Leaderboard Section -->
+            <section class="leaderboard">
+                <div class="leaderboard-header">
+                    <h2 class="section-title">Community Leaderboard</h2>
+                    <p class="leaderboard-subtitle">Top playtimes for <span>Elden Ring: Shadow of the Erdtree</span>
+                        this month</p>
+                </div>
+
+                <div class="leaderboard-card">
+                    <div class="leaderboard-table-header">
+                        <span class="col-rank">RANK</span>
+                        <span class="col-player">PLAYER</span>
+                        <span class="col-level">LEVEL</span>
+                        <span class="col-hours">PLAYTIME</span>
+                        <span class="col-achievements">ACHIEVEMENTS</span>
+                    </div>
+
+                    <div class="leaderboard-list">
+                        <!-- Rank 1 -->
+                        <div class="leaderboard-item rank-1">
+                            <div class="col-rank"><span class="rank-badge">1</span></div>
+                            <div class="col-player">
+                                <div class="player-avatar">AS</div>
+                                <div class="player-info">
+                                    <span class="player-name">Alex Storm</span>
+                                    <span class="player-status online">Online</span>
+                                </div>
+                            </div>
+                            <div class="col-level">142</div>
+                            <div class="col-hours">684.5 hrs</div>
+                            <div class="col-achievements">
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" style="width: 100%;"></div>
+                                </div>
+                                <span class="ach-val">100%</span>
+                            </div>
+                        </div>
+
+                        <!-- Rank 2 -->
+                        <div class="leaderboard-item rank-2">
+                            <div class="col-rank"><span class="rank-badge">2</span></div>
+                            <div class="col-player">
+                                <div class="player-avatar">MK</div>
+                                <div class="player-info">
+                                    <span class="player-name">Misty Knight</span>
+                                    <span class="player-status in-game">In Elden Ring</span>
+                                </div>
+                            </div>
+                            <div class="col-level">128</div>
+                            <div class="col-hours">592.1 hrs</div>
+                            <div class="col-achievements">
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" style="width: 92%;"></div>
+                                </div>
+                                <span class="ach-val">92%</span>
+                            </div>
+                        </div>
+
+                        <!-- Rank 3 -->
+                        <div class="leaderboard-item rank-3">
+                            <div class="col-rank"><span class="rank-badge">3</span></div>
+                            <div class="col-player">
+                                <div class="player-avatar">VR</div>
+                                <div class="player-info">
+                                    <span class="player-name">Victor Ray</span>
+                                    <span class="player-status offline">Offline</span>
+                                </div>
+                            </div>
+                            <div class="col-level">115</div>
+                            <div class="col-hours">421.8 hrs</div>
+                            <div class="col-achievements">
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" style="width: 78%;"></div>
+                                </div>
+                                <span class="ach-val">78%</span>
+                            </div>
+                        </div>
+
+                        <!-- Rank 4 -->
+                        <div class="leaderboard-item">
+                            <div class="col-rank"><span class="rank-badge">4</span></div>
+                            <div class="col-player">
+                                <div class="player-avatar">SB</div>
+                                <div class="player-info">
+                                    <span class="player-name">Sarah Blade</span>
+                                    <span class="player-status online">Online</span>
+                                </div>
+                            </div>
+                            <div class="col-level">94</div>
+                            <div class="col-hours">312.4 hrs</div>
+                            <div class="col-achievements">
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" style="width: 65%;"></div>
+                                </div>
+                                <span class="ach-val">65%</span>
+                            </div>
+                        </div>
+
+                        <!-- Rank 5 -->
+                        <div class="leaderboard-item">
+                            <div class="col-rank"><span class="rank-badge">5</span></div>
+                            <div class="col-player">
+                                <div class="player-avatar">NP</div>
+                                <div class="player-info">
+                                    <span class="player-name">Nero Pulse</span>
+                                    <span class="player-status online">Online</span>
+                                </div>
+                            </div>
+                            <div class="col-level">82</div>
+                            <div class="col-hours">275.9 hrs</div>
+                            <div class="col-achievements">
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" style="width: 58%;"></div>
+                                </div>
+                                <span class="ach-val">58%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing -->
+            <section class="pricing">
+                <h2 class="section-title">Choose your plan</h2>
+                <p class="pricing-subtitle">Play all you want. Recommendations just for you. Change or cancel your plan
+                    anytime.</p>
+                <div class="pricing-grid">
+                    <div class="plan-card">
+                        <h3 class="plan-name">Gold Plan</h3>
+                        <div class="plan-price"><span class="price">$9.99</span><span class="period">/month</span></div>
+                        <ul class="plan-features">
+                            <li>✓ No Ads</li>
+                            <li>✓ Team playing up to 10 members</li>
+                            <li>✓ 720p Resolution</li>
+                            <li>✓ 50 Downloads</li>
+                        </ul>
+                        <button class="plan-btn">Get Started</button>
+                    </div>
+                    <div class="plan-card featured">
+                        <h3 class="plan-name">Platinum Plan</h3>
+                        <div class="plan-price"><span class="price">$29.99</span><span class="period">/year</span></div>
+                        <ul class="plan-features">
+                            <li>✓ Unlimited games</li>
+                            <li>✓ No Ads</li>
+                            <li>✓ Team playing up to 55 members</li>
+                            <li>✓ 4K+HDR Resolution</li>
+                            <li>✓ 500 Downloads</li>
+                        </ul>
+                        <button class="plan-btn primary">Get Started</button>
+                    </div>
+                    <div class="plan-card">
+                        <h3 class="plan-name">Diamond Plan</h3>
+                        <div class="plan-price"><span class="price">$19.99</span><span class="period">/year</span></div>
+                        <ul class="plan-features">
+                            <li>✓ Unlimited games</li>
+                            <li>✓ Team playing up to 20 members</li>
+                            <li>✓ 1080p Resolution</li>
+                            <li>✓ 200 Downloads</li>
+                        </ul>
+                        <button class="plan-btn">Get Started</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-brand-section">
+                    <h2 class="footer-logo">GAMEBOX</h2>
+                    <p class="footer-about">Experience the next generation of gaming management. Organize, play, and
+                        explore with GameBox.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                        </a>
+                        <a href="#" class="social-icon">
+                        </a>
+                        <a href="#" class="social-icon">
+                        </a>
+                        <a href="#" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links-grid">
+                    <div class="footer-links-column">
+                        <h3 class="footer-column-title">Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Brand Center</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3 class="footer-column-title">Support</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Support</a></li>
+                            <li><a href="#">Guidelines</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3 class="footer-column-title">Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Setting</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3 class="footer-column-title">Newsletter</h3>
+                    <p>Get the latest gaming news and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 GameBox. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">English (US)</a>
+                    <a href="#">System Status</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="root" style="display:none"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
